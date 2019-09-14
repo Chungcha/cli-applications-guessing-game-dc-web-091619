@@ -1,5 +1,5 @@
 def random
-  num=rand(6)+1
+  rand(6)+1
 end
 
 def prompt
@@ -13,14 +13,17 @@ end
 def compare(num,input)
   if num==input
     puts "You guessed the correct number!"
-  elsif num != input
-    puts "Sorry! The computer guessed #{num}"
-  elsif guess == "exit"
+  elsif input == "exit"
     puts "Goodbye!"
+  else
+    puts "Sorry! The computer guessed #{num}"
   end
 end
 
 
 def run_guessing_game
-  random
+  num=random
+  prompt
+  input=prompt_input
+  compare(num,input)
 end
