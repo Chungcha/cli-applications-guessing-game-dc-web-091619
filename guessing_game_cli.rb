@@ -11,6 +11,7 @@ def prompt_input
 end
 
 def compare(num,input)
+  input.to_i
   if num==input
     puts "You guessed the correct number!"
   elsif input == "exit"
