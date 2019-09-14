@@ -11,12 +11,12 @@ def prompt_input
 end
 
 def compare(num,input)
-  if num===input
+  if num==input
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
-  elsif num != input && num != "exit"
-    puts "Sorry! The computer guessed #{num}."
+ # elsif num != input && num != "exit"
+#    puts "Sorry! The computer guessed #{num}."
   end
 end
 
